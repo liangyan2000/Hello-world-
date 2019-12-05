@@ -2,9 +2,9 @@
 using namespace std;
 int main()
 {
-	int k, x, count1, count5=0, count10;
-	//不知道为什么这个count5必须赋值为0，否则就当成1来处理，而其他两个就没事。 
-		cin>>k;
+	int k, x, count1=0, count5=0, count10=0;
+	//without initializing, variables inside main() will have random initial value
+	cin>>k;
 	for (int i=1;i<=k;i++)
 		{
 			cin>>x;
